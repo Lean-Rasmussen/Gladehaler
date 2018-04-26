@@ -1,0 +1,27 @@
+.header{
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, rgba($light-green, 0.4), rgba($dark-green, 0.4)), url("../img/dog2.jpg");
+    clip-path: polygon(0 0,100% 0, 100% 60%, 50% 100%, 0 60%);
+    position: relative;
+    background-position: bottom;
+    background-size: cover;
+
+
+    &__logo-box{
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+
+    }
+    &__logo-img{
+        height: 12rem;
+
+    }
+    &__text-box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+}
