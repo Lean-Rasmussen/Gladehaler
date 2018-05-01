@@ -1,0 +1,29 @@
+.container{
+    height: 15vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgba($color-secondary-yellow1, 0.8), rgba($color-secondary-yellow2, 0.8));
+    clip-path: polygon(0 20% ,50% 0,100% 20%, 100% 100%, 0 100%);
+    bottom: 0;
+    margin-top: -3rem;
+    text-align: center;
+
+    &__kontakt{
+        padding-top: 2rem;
+        color: $color-white;
+        font-size: 1.8rem;
+        a{
+            display: block;
+            color: inherit;
+
+            &:link, &:visited{
+                text-decoration: none;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }    
+}
+.kontakt__link{
+    display: inline
+}

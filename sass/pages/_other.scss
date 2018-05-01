@@ -1,0 +1,23 @@
+.other{
+    height: 60vh;
+    padding: 0 20rem;
+
+    &__text-box {
+        text-align: center;
+        height: 35rem;
+        color: $color-black;
+        background-color: white;
+        border-radius: 50px;
+        position: relative;
+        border: 4px solid $medium-green;
+        &:hover{
+            box-shadow: 0 2rem 2rem rgba($color-black, 0.15);
+        }
+    }
+    
+    &__walking__text{
+        padding: 2rem 1.5rem;
+    }
+}
+
+

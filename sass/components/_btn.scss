@@ -22,4 +22,9 @@
     &--animation{
         animation: moveUp 1s ease-in;
     }
+    &--white{
+        color: $color-black;
+        border: 1px solid $color-light-grey1;
+        background-color: $color-white;
+    }
 }
