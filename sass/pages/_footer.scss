@@ -1,7 +1,7 @@
 .container{
     height: 15vh;
     width: 100%;
-    background-image: linear-gradient(to bottom right, rgba($color-secondary-yellow1, 0.8), rgba($color-secondary-yellow2, 0.8));
+    background: linear-gradient(to bottom right, rgba($color-secondary-yellow1, 0.8), rgba($color-secondary-yellow2, 0.8));
     clip-path: polygon(0 20% ,50% 0,100% 20%, 100% 100%, 0 100%);
     bottom: 0;
     margin-top: -3rem;
@@ -14,16 +14,14 @@
         a{
             display: block;
             color: inherit;
-
+            transition: all 0.5s;
             &:link, &:visited{
                 text-decoration: none;
             }
             &:hover{
                 cursor: pointer;
+                transform: scale(1.2)
             }
         }
     }    
-}
-.kontakt__link{
-    display: inline
 }

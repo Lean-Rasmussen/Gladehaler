@@ -1,0 +1,96 @@
+.pop-up{
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    background-color: rgba($color-black, .7);
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+    transform: scale(0.25);
+    
+    &:target{
+        opacity: 1;
+        visibility:visible;
+        transform: scale(1);
+    }
+    
+    &__box{
+        @include absPosCenter;
+
+        border-radius: 5px;
+        height: 60%;
+        width: 75%;
+        background-color: rgba($color-white, .9);
+
+        &__left{
+            width: 66%;
+            float: left;
+        }
+        
+        &__right{
+            height: 100%;
+            width: 33.3333333%;
+            float: right;
+            position: relative;
+
+            &__img{
+                height: 100%;
+                background-position: 50% 75%;
+                background-size: cover;
+
+            }
+        }
+
+        &__close,
+        &:link,
+        &:visited{
+            text-align: center;
+            width: 3.2rem;
+            height: 3.2rem;
+            text-decoration: none;
+            position: absolute;
+            top:2rem;
+            right: 2rem;
+            font-size: 3rem;
+            background-color:$color-white;
+            color:$medium-green;
+            border-radius: 100px;
+            line-height: 1;
+            transition: all 0.3s;
+
+            &:hover{
+                background-color: $medium-green;
+                color:$color-white;
+                transform: rotate(90deg) scale(1.15);
+                
+
+            }
+        }
+    }
+
+    &__text-box{
+        font-size: 1.8rem;
+        &__text{
+            float: left;
+            margin-left: 2rem;
+            width: 46%;
+          
+        }
+        &__list{
+            width: 46%;
+            float: right;
+            list-style-type: none;
+            li{
+                margin-bottom: 2rem;
+
+            }
+        }
+    }
+    &__kontakt{
+        position:absolute;
+        bottom: 0;
+        left:33%;
+        transform: translate(-50%, -50%)
+    }
+}
