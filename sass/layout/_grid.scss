@@ -1,6 +1,14 @@
 .row{
     max-width:80%;
     margin: 0 auto;
+
+    @include respond(tab-vertical){
+        max-width: 100%;
+    }
+    @include respond(phone){
+        max-width: 100%;
+    }
+
     @include clearfix;
 
  &:not(:last-child){
@@ -8,10 +16,20 @@
  }
  [class^="col"]{
      float: left;
-     
+
+     @include respond(phone){
+        width: 100%;
+        padding: 0 4rem;
+        
+    }
      &:not(:last-child){
          margin-right: $gutter-horizontal;
-     }
+
+            @include respond(phone){
+            margin-right: 0;
+            margin-bottom: $gutter-vertical-small;
+            }
+        }
     }
 }
 .col-1-of-2{

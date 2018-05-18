@@ -1,10 +1,8 @@
 .container{
-    height: 15vh;
     width: 100%;
-    background: linear-gradient(to bottom right, rgba($color-secondary-yellow1, 0.8), rgba($color-secondary-yellow2, 0.8));
+    background-image: linear-gradient(to bottom right, rgba($color-secondary-yellow1, 0.5), rgba($color-secondary-yellow2, 0.8)), url(../img/grass.jpg);
     clip-path: polygon(0 20% ,50% 0,100% 20%, 100% 100%, 0 100%);
-    bottom: 0;
-    margin-top: -3rem;
+    margin-top: 3rem;
     text-align: center;
 
     &__kontakt{
@@ -14,7 +12,7 @@
         a{
             display: block;
             color: inherit;
-            transition: all 0.5s;
+            transition: all 0.2s;
             &:link, &:visited{
                 text-decoration: none;
             }

@@ -13,6 +13,14 @@
         z-index: 10;
         outline-offset: 2rem;
         border-radius: 5px;
+        @include respond(tab-horizonta){
+
+        }
+        @include respond(phone){
+            position: relative;
+            border-radius: 100%;
+            
+        }
         
         &:hover{
             transform: scale(1.3);
@@ -23,21 +31,37 @@
         &--p1{
             left:0;
             top:-2rem;
-            height: 25rem;
             width: 20rem;
             z-index:15;
+
+            @include respond(phone){
+                display: block;
+                margin: 0 auto;
+                border: 5px solid $medium-green;
+                width: 25rem;
+
+            }
         }
         &--p2{
-            right:0;
+            right:-4rem;
             top:4rem;
             width: 20rem;
             height: 30rem;
+
+            @include respond(phone){
+                display: none;  
+            }
         }
         &--p3{
             left:25%;
             top:16rem;
-            height: 20rem;
             width: 27rem;
+
+            @include respond(phone){
+                display: none;
+                
+                
+            }
         }
     }
 }

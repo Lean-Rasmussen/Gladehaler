@@ -4,12 +4,17 @@
   "description": "landing page for Natours",
   "main": "index.js",
   "scripts": {
-    "watchSass": "node-sass --watch sass/main.scss css/style.css"
+    "watchSass": "node-sass --watch sass/main.scss css/style.css",
+    "compile:Sass": "node-sass sass/main.scss cc/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' css/style.comp.css -o css/style.prefix.css"
   },
   "author": "Lean Rasmussen",
   "lisence": "ISC",
   "devDependencies": {
-    "node-sass": "4.5.3"
+    "autoprefixer": "^8.5.0",
+    "concat": "^1.0.3",
+    "node-sass": "4.5.3",
+    "postcss-cli": "^5.0.0"
   },
   "dependencies": {
     "live-server": "^1.2.0"
