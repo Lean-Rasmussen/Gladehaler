@@ -175,7 +175,7 @@ body {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)), url("../img/dog2.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.4), rgba(40, 180, 133, 0.4)), url("../img/Indy.jpg");
   clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 100%, 0 60%);
   position: relative;
   background-position: bottom;
@@ -191,7 +191,7 @@ body {
     top: 3rem;
     left: 3rem; }
   .header__logo-img {
-    height: 12rem; }
+    height: 15rem; }
 
 .gallery {
   position: relative; }
@@ -228,8 +228,7 @@ body {
     .gallery__photo--p2 {
       right: -4rem;
       top: 4rem;
-      width: 20rem;
-      height: 30rem; }
+      width: 21rem; }
       @media (max-width: 780px) {
         .gallery__photo--p2 {
           display: none; } }
@@ -240,14 +239,29 @@ body {
       @media (max-width: 780px) {
         .gallery__photo--p3 {
           display: none; } }
+    .gallery__photo--p4 {
+      left: 2rem;
+      top: 32rem;
+      width: 20rem; }
+      @media (max-width: 780px) {
+        .gallery__photo--p4 {
+          display: none; } }
+    .gallery__photo--p5 {
+      right: 1rem;
+      top: 32rem;
+      width: 20rem;
+      height: 30rem; }
+      @media (max-width: 780px) {
+        .gallery__photo--p5 {
+          display: none; } }
 
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 53rem; }
+  height: 58rem; }
   .card__side {
-    height: 53rem;
+    height: 58rem;
     transition: all 0.8s ease;
     position: absolute;
     top: 0;
@@ -277,14 +291,17 @@ body {
     overflow: hidden;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)), url(../img/dog2.jpg);
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)), url(../img/nova2.jpg);
+      background-position: center;
       height: 23rem; }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url(../img/dog4.jpg);
+      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.8), rgba(86, 67, 250, 0.8)), url(../img/Laerke.jpg);
+      background-position: center;
       height: 23rem; }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/luftning2.jpg);
-      height: 23rem; }
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/Gucci5.jpg);
+      height: 23rem;
+      background-position: center; }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 400;
@@ -318,9 +335,12 @@ body {
       padding: 1rem; }
       .card ul li:not(:last-child) {
         border-bottom: 1px solid #eee; }
+  .card__back-info {
+    color: #fff;
+    margin: 2rem; }
   .card__call-to-action {
     position: absolute;
-    top: 50%;
+    bottom: -17%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
@@ -382,7 +402,7 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         height: 80%;
-        max-width: 95%;
+        width: 95%;
         border-radius: 75%;
         border: 4px solid #55c57a;
         box-shadow: 1.5rem 1.5rem 4rem rgba(0, 0, 0, 0.15); }
@@ -496,7 +516,7 @@ body {
 .about__text-container {
   background-color: #fff;
   padding: 2rem;
-  border-radius: 10px; }
+  border-radius: 5px; }
 
 .info {
   background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url(../img/skov.jpg);
@@ -511,13 +531,17 @@ body {
   .info__box {
     height: 45rem;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 12.5rem;
     transition: all 0.6s;
     color: #414141; }
     @media (max-width: 780px) {
       .info__box {
         height: 30rem;
+        margin-top: 4rem; } }
+    @media (max-width: 780px) {
+      .info__box--big {
+        height: 60rem;
         margin-top: 4rem; } }
     .info__box:hover {
       box-shadow: 2rem 2rem 3rem rgba(255, 255, 255, 0.4);
@@ -528,11 +552,6 @@ body {
       text-decoration: none; }
       .info__box__clicker:after {
         text-decoration: none; }
-  .info__hold {
-    font-size: 2rem;
-    margin: 2rem; }
-    .info__holdspan {
-      display: inline-block; }
   .info__location {
     padding: 2rem 1.5rem 1rem 1.5rem; }
 
@@ -541,7 +560,7 @@ body {
   height: 35rem;
   color: #000;
   background-color: white;
-  border-radius: 50px;
+  border-radius: 5px;
   position: relative;
   border: 4px solid #55c57a; }
   .other__text-box:hover {
@@ -555,13 +574,15 @@ body {
   background-image: linear-gradient(to bottom right, rgba(255, 185, 0, 0.5), rgba(255, 119, 48, 0.8)), url(../img/grass.jpg);
   clip-path: polygon(0 20%, 50% 0, 100% 20%, 100% 100%, 0 100%);
   margin-top: 3rem;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 2rem; }
   .container__kontakt {
     padding-top: 2rem;
     color: #fff;
     font-size: 1.8rem; }
     .container__kontakt a {
-      display: block;
+      display: inline-block;
+      width: 80%;
       color: inherit;
       transition: all 0.2s; }
       .container__kontakt a:link, .container__kontakt a:visited {
