@@ -2,16 +2,16 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 53rem;
+    height: 58rem;
     &__side{
-        height: 53rem;
+        height: 58rem;
         transition: all 0.8s ease;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         backface-visibility: hidden;
-        border-radius: 5px;
+        border-radius: $border-radius-std;
         box-shadow: 1.5rem 1.5rem 4rem rgba($color-black, 0.15);
 
         &--front{
@@ -47,17 +47,20 @@
         clip-path: polygon(0 0,100% 0, 100% 80%, 0 100%);
         &--1{
             background-image: linear-gradient(to right bottom, rgba($color-secondary-yellow1, 0.8), rgba($color-secondary-yellow2, 0.8)),
-            url(../img/dog2.jpg);
+            url(../img/nova2.jpg);
+            background-position: center;
             height: 23rem;
         }
         &--2{
             background-image: linear-gradient(to right bottom, rgba($color-secondary-blue1, 0.8), rgba($color-secondary-blue2, 0.8)),
-            url(../img/dog4.jpg);
+            url(../img/Laerke.jpg);
+            background-position: center;
             height: 23rem;
         }
         &--3{
-            background-image: linear-gradient(to right bottom, rgba($light-green, 0.8), rgba($dark-green, 0.8)),url(../img/luftning2.jpg);
+            background-image: linear-gradient(to right bottom, rgba($light-green, 0.8), rgba($dark-green, 0.8)),url(../img/Gucci5.jpg);
             height: 23rem;
+            background-position: center;
         }
     }
     &__heading{
@@ -103,8 +106,13 @@
         }
 
     }
+    &__back-info{
+        color: $color-white;
+        margin: 2rem;
+    }
+
     &__call-to-action{
-        @include absPosCenter;
+        @include absPosBottomCenter;
         
         width: 90%;
         text-align: center;

@@ -4,13 +4,15 @@
     clip-path: polygon(0 20% ,50% 0,100% 20%, 100% 100%, 0 100%);
     margin-top: 3rem;
     text-align: center;
+    padding-bottom: 2rem;
 
     &__kontakt{
         padding-top: 2rem;
         color: $color-white;
         font-size: 1.8rem;
         a{
-            display: block;
+            display: inline-block;
+            width: 80%;
             color: inherit;
             transition: all 0.2s;
             &:link, &:visited{

@@ -1,6 +1,6 @@
 .header{
     height: 100vh;
-    background-image: linear-gradient(to right bottom, rgba($light-green, 0.4), rgba($dark-green, 0.4)), url("../img/dog2.jpg");
+    background-image: linear-gradient(to right bottom, rgba($light-green, 0.4), rgba($dark-green, 0.4)), url("../img/Indy.jpg");
     clip-path: polygon(0 0,100% 0, 100% 60%, 50% 100%, 0 60%);
     position: relative;
     background-position: bottom;
@@ -17,7 +17,7 @@
 
     }
     &__logo-img{
-        height: 12rem;
+        height: 15rem;
 
     }
 
