@@ -18,6 +18,10 @@
     }
     &__logo-img{
         height: 15rem;
+        @include respond(phone){
+            height: 12rem;
+            
+        }
 
     }
 
