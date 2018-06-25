@@ -32,6 +32,14 @@ Base + Typography > general layout + grid > page layout > components
             @content
         }
     };
+    //mixing for phone in landscape mode
+    @if $breakpoint == phone-ls{
+        @media only screen
+        and (max-device-width: 780px)
+        and (orientation: landscape){
+            @content
+        }
+    };
     @if $breakpoint == tab-horizontal{
         @media (max-width: 900px){
             @content
@@ -47,4 +55,5 @@ Base + Typography > general layout + grid > page layout > components
             @content
         }
     };
+
 }

@@ -8,6 +8,9 @@
 html{
     // This defines what 1 rem for the app
     font-size: 62.5%;
+    @include respond(phone-ls){
+        font-size: 10%;
+    }
 
     @include respond(tab-vertical){
         font-size:62%;

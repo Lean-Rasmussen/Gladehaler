@@ -41,6 +41,9 @@ Base + Typography > general layout + grid > page layout > components
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-device-width: 780px) and (orientation: landscape) {
+    html {
+      font-size: 10%; } }
   @media (max-width: 1200px) {
     html {
       font-size: 62%; } }
@@ -62,6 +65,9 @@ body {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.6rem; }
+  @media only screen and (max-device-width: 780px) and (orientation: landscape) {
+    body {
+      font-size: 1.9rem; } }
 
 .header__primary {
   color: #fff;
@@ -77,6 +83,9 @@ body {
       .header__primary--main {
         letter-spacing: 0.5rem;
         font-size: 5rem; } }
+    @media only screen and (max-device-width: 780px) and (orientation: landscape) {
+      .header__primary--main {
+        font-size: 4rem; } }
   .header__primary--sub {
     display: block;
     font-weight: 400;
@@ -84,6 +93,9 @@ body {
     @media (max-width: 780px) {
       .header__primary--sub {
         letter-spacing: 5px; } }
+    @media only screen and (max-device-width: 780px) and (orientation: landscape) {
+      .header__primary--sub {
+        font-size: 2rem; } }
 
 .about__header {
   color: #55c57a;
@@ -479,6 +491,9 @@ body {
   @media (max-width: 780px) {
     .row {
       max-width: 100%; } }
+  @media only screen and (max-device-width: 780px) and (orientation: landscape) {
+    .row {
+      max-width: 75%; } }
   .row::after {
     content: "";
     display: table;

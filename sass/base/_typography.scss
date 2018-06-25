@@ -1,6 +1,9 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.6rem;
+    @include respond(phone-ls){
+        font-size: 1.9rem;
+    }
 }
 
 
@@ -20,6 +23,9 @@ body{
         letter-spacing: 0.5rem;
         font-size: 5rem;
         }
+        @include respond(phone-ls){
+            font-size: 4rem;
+        }
     }
     &--sub{
         display: block;
@@ -29,6 +35,9 @@ body{
         @include respond(phone){
             letter-spacing: 5px;
         
+        }
+        @include respond(phone-ls){
+            font-size: 2rem;
         }
     }
 }

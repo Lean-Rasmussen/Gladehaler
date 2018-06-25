@@ -8,6 +8,9 @@
     @include respond(phone){
         max-width: 100%;
     }
+    @include respond(phone-ls){
+        max-width:75%;
+    }
 
     @include clearfix;
 
